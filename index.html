@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personalized Greeting</title>
+</head>
+<body>
+
+<h1>Personalized Greeting</h1>
+
+<label for="name">Enter your name: </label>
+<input type="text" id="nameInput">
+<button id="greetButton">Greet Me</button>
+
+<p id="greetingMessage"></p>
+
+<script>
+    // JavaScript code
+    document.getElementById("greetButton").addEventListener("click", function() {
+        var name = document.getElementById("nameInput").value;
+        var greetingMessage = "Hello, " + name + "! Welcome to our website.";
+        document.getElementById("greetingMessage").textContent = greetingMessage;
+    });
+</script>
+
+</body>
+</html>
